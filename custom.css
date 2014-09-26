@@ -1,0 +1,87 @@
+/*
+Placeholder for custom user CSS
+
+mainly to be overridden in profile/static/custom/custom.css
+
+This will always be an empty file in IPython
+*/
+
+* {
+    font-family: Consolas, 'Source Code Pro';
+}
+
+h1 {
+    border-bottom: 2px solid black;
+}
+
+.main_title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.sub_title1 {
+    border-bottom: 1px solid black;
+}
+
+
+/* output of cell */
+#notebook-container > div.cell.border-box-sizing.code_cell.command_mode.rendered.selected > div.output_wrapper > div.output > div > div.output_subarea.output_text.output_stream.output_stdout > pre {
+    font-family: Consolas;
+}
+#notebook-container > div > div.output_wrapper > div.output > div > div.output_subarea.output_text.output_stream.output_stdout > pre {
+    font-family: Consolas;
+}
+/* markdown cells */
+#notebook-container > div.cell.text_cell.border-box-sizing.command_mode.rendered.unselected > div.inner_cell > div.text_cell_render.border-box-sizing.rendered_html > p {
+    font-family: Georgia;
+}
+
+#notebook-container > div.cell.text_cell.border-box-sizing.command_mode.rendered.selected > div.inner_cell > div.text_cell_render.border-box-sizing.rendered_html > p {
+    font-family: Georgia;
+}
+
+.dataframe {
+    font-family: 'Consolas';
+    margin: 25px auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+
+}
+.dataframe tr { 
+    background: #f4f4f4;
+}
+
+.dataframe tr:hover {
+    background: #ddd;
+}
+
+.dataframe tr td {
+    color: black;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    text-align: center;
+}
+    
+.dataframe th, td {
+        color: #bbb;
+        border: 1px solid #eee;
+        padding: 12px 35px;
+        border-collapse: collapse;
+    }
+.dataframe th {
+        background: #ccc;
+        color: black;
+        text-transform: uppercase;
+        font-size: 12px;
+}
+
+
+

@@ -1,44 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<title>index slides</title>
+<title>index</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-<!-- General and theme style sheets -->
-<link rel="stylesheet" href="/css/reveal.css">
-<link rel="stylesheet" href="/css/theme/simple.css" id="theme">
-
-<!-- For syntax highlighting -->
-<link rel="stylesheet" href="/lib/css/zenburn.css">
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-}
-
-</script>
-
-<!--[if lt IE 9]>
-<script src="/lib/js/html5shiv.js"></script>
-<![endif]-->
-
-<!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
 
 <style type="text/css">
     .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
@@ -1650,121 +1618,34 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-html {
-  overflow-y: auto;
+body {
+  overflow: visible;
+  padding: 8px;
 }
-.reveal {
-  font-size: 160%;
+
+div#notebook {
+  overflow: visible;
+  border-top: none;
 }
-.reveal pre {
-  width: inherit;
-  padding: 0.4em;
-  margin: 0px;
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-}
-.reveal section img {
-  border: 0px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-}
-.reveal i {
-  font-style: normal;
-  font-family: FontAwesome;
-  font-size: 2em;
-}
-.reveal .slides {
-  text-align: left;
-}
-.reveal.fade {
-  opacity: 1;
-}
-.reveal .progress {
-  position: static;
-}
-div.input_area {
-  padding: 0.06em;
-}
-div.code_cell {
-  background-color: transparent;
-}
-div.prompt {
-  width: 11ex;
-  padding: 0.4em;
-  margin: 0px;
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-  text-align: right;
-}
-div.output_area pre {
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-}
-div.output_prompt {
-  /* 5px right shift to account for margin in parent container */
-  margin: 5px 5px 0 0;
-}
-.rendered_html p {
-  text-align: inherit;
+
+@media print {
+  div.cell {
+    display: block;
+    page-break-inside: avoid;
+  } 
+  div.output_wrapper { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+  div.output { 
+    display: block;
+    page-break-inside: avoid; 
+  }
 }
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
-
-</head>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<style type="text/css">
-//div.output_wrapper{
-// margin-top: 0px;
-//}
-.input_hidden{
-  display: none;
-// margin-top: 5px;
-
-}
-</style>
-
-<script>
-$(document).ready(function(){
-  $(".output_wrapper").click(function(){
-    $(this).prev('.input_hidden').slideToggle();
-  });
-})
-</script>
-<body>
-<div class="reveal">
-<div class="slides">
-
-</div>
-</div>
-
-<script src="/lib/js/head.min.js"></script>
-
-<script src="/js/reveal.js"></script>
-
-<script>
-
-// Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-controls: true,
-progress: true,
-history: true,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
-{ src: "/lib/js/classList.js", condition: function() { return !document.body.classList; } },
-{ src: "/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-{ src: "/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
-]
-});
-</script>
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -1789,13 +1670,68 @@ dependencies: [
     </script>
     <!-- End of mathjax configuration -->
 
-<script>
-Reveal.addEventListener( 'slidechanged', function( event ) {
-  window.scrollTo(0,0);
-  MathJax.Hub.Rerender(event.currentSlide);
-});
-</script>
+</head>
+<body>
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hello,-World!">Hello, World!<a class="anchor-link" href="#Hello,-World!">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="s">&quot;This is pretty cool&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+This is pretty cool
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
 </body>
-
 </html>
