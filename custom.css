@@ -88,4 +88,6 @@ h1 {
 #notebook-container > div.cell.border-box-sizing.code_cell.rendered.command_mode.selected > div.output_wrapper > div.output > div > div.output_subarea.output_jpeg > div > img {
     display: block;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
