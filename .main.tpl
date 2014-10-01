@@ -2,13 +2,9 @@
 
 {%- block header -%}
 
+<title>Ryan Brunt</title>
 {{ super() }}
 
-<title>Ryan Brunt</title>
-
-<script>
-$('.input').slideToggle();
-</script>
 
 {%- endblock header -%}
 
@@ -16,7 +12,6 @@ $('.input').slideToggle();
 {%- block body -%}
 {{ super () }}
 
-<title>Ryan Brunt</title>
 <script>
 $('.input').slideToggle();
 </script>
