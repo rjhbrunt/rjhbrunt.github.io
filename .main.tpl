@@ -14,6 +14,8 @@ $('.input').slideToggle();
 
 
 {%- block body -%}
+{{ super () }}
+
 <title>Ryan Brunt</title>
 <script>
 $('.input').slideToggle();
