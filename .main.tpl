@@ -13,7 +13,7 @@
 {{ super () }}
 
 <script>
-$('.input').slideToggle();
+$('.input').slideToggle(duration=0);
 </script>
 
 {%- endblock body -%}
