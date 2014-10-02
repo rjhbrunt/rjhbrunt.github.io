@@ -1689,55 +1689,32 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[2]:
+In&nbsp;[92]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Javascript</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">IFrame</span>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
-<span class="s">&lt;div&gt;</span>
-<span class="s">&lt;button type=&quot;button&quot; onclick=&quot;$(&#39;.input&#39;).slideToggle();&quot;&gt;Toggle Code&lt;/button&gt;</span>
-<span class="s">&lt;a href=&quot;https://github.com/rjhbrunt/rjhbrunt.github.io&quot; target=&quot;_blank&quot;&gt;&lt;button type=&quot;button&quot;&gt;See Source&lt;/button&gt;&lt;/a&gt;</span>
-<span class="s">&lt;/div&gt;</span>
-<span class="s">&quot;&quot;&quot;</span><span class="p">))</span>
-</pre></div>
+<span class="s">&lt;nav&gt;</span>
+<span class="s">    &lt;div class=&quot;container&quot;&gt;</span>
+<span class="s">        &lt;ul&gt;</span>
+<span class="s">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span>
+<span class="s">            &lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;$(&#39;.input&#39;).slideToggle();&quot;&gt;Toggle Code&lt;/a&gt;&lt;/li&gt;</span>
+<span class="s">            &lt;li&gt;&lt;a href=&quot;https://github.com/rjhbrunt/rjhbrunt.github.io&quot; target=&quot;_blank&quot;&gt;See Source&lt;/a&gt;&lt;/li&gt;</span>
+<span class="s">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Site Map&lt;/a&gt;</span>
+<span class="s">                &lt;ul&gt;</span>
+<span class="s">                    &lt;li&gt;&lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</span>
+<span class="s">                    &lt;li&gt;&lt;a href=&quot;/projects&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;</span>
+<span class="s">                &lt;/ul&gt;</span>
+<span class="s">            &lt;/li&gt;</span>
+<span class="s">        &lt;/ul&gt;</span>
+<span class="s">    &lt;/div&gt;</span>
+<span class="s">&lt;/nav&gt;</span>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-
-<div>
-<button type="button" onclick="$('.input').slideToggle();">Toggle Code</button>
-<a href="https://github.com/rjhbrunt/rjhbrunt.github.io" target="_blank"><button type="button">See Source</button></a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[19]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
 <span class="s">&lt;div&gt;</span>
 <span class="s">&lt;img src=&quot;familypic.jpg&quot; height=454 width=333 style=&quot;float:left;margin-right:1.2em&quot;/&gt;</span>
-<span class="s">&lt;div&quot;&gt;</span>
+<span class="s">&lt;div&gt;</span>
 <span class="s">&lt;h2&gt;WELCOME&lt;/h2&gt;</span>
 <span class="s">&lt;p&gt;This site is under construction but feel free to hang around and see what I am up to. </span>
 <span class="s">I am experimenting with building a website entirely with &lt;a href=&quot;http://ipython.org/&quot;&gt;IPython&lt;/a&gt; notebooks. It is hosted via </span>
@@ -1762,9 +1739,25 @@ In&nbsp;[19]:
 
 <div class="output_html rendered_html output_subarea ">
 
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="$('.input').slideToggle();">Toggle Code</a></li>
+            <li><a href="https://github.com/rjhbrunt/rjhbrunt.github.io" target="_blank">See Source</a></li>
+            <li><a href="#">Site Map</a>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <div>
 <img src="familypic.jpg" height=454 width=333 style="float:left;margin-right:1.2em"/>
-<div">
+<div>
 <h2>WELCOME</h2>
 <p>This site is under construction but feel free to hang around and see what I am up to. 
 I am experimenting with building a website entirely with <a href="http://ipython.org/">IPython</a> notebooks. It is hosted via 
@@ -1779,21 +1772,6 @@ and you can see the input I wrote to generate the site. Or you can see the full 
 
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[12]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
-</div>
 </div>
 </div>
 
