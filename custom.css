@@ -20,6 +20,7 @@ h1 {
     color: #aaa;
     margin-bottom: 1.2em;
     font-family: Open Sans, Consolas, 'Source Code Pro';
+    width: 1170px;
 }
 
 
@@ -97,6 +98,7 @@ p {
 
 nav {
     top: 0;
+    width: 1170px;
     background-color: #d4ebf2;
     width: 100%;
     height: 80px;
