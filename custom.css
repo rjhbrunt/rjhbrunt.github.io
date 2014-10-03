@@ -16,6 +16,8 @@ h1 {
 
 .main-title {
     border: none;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: normal!important;
     color: #aaa;
     margin-bottom: 1.2em;
@@ -98,6 +100,8 @@ p {
 
 nav {
     top: 0;
+    margin-left:auto;
+    margin-right:auto;
     width: 1170px;
     background-color: #d4ebf2;
     width: 100%;
