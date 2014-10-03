@@ -14,6 +14,14 @@ h1 {
     border-bottom: 2px solid black;
 }
 
+.main-title {
+    border: none;
+    font-weight: normal!important;
+    color: #aaa;
+    margin-bottom: 2.2em;
+    font-family: Open Sans, Consolas, 'Source Code Pro';
+}
+
 
 /* output of cell */
 #notebook-container > div.cell.border-box-sizing.code_cell.command_mode.rendered.selected > div.output_wrapper > div.output > div > div.output_subarea.output_text.output_stream.output_stdout > pre {
@@ -89,10 +97,10 @@ p {
 
 nav {
     top: 0;
-    background-color: white;
+    background-color: #d4ebf2;
     width: 100%;
     height: 80px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
 }
 
@@ -113,7 +121,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 nav ul li a:link {
@@ -145,6 +153,9 @@ nav > div > ul > li > a {
     padding: 29px 30px;
     list-style: none;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 nav > div > ul > li:hover {

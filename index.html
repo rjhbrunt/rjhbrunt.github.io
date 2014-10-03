@@ -1671,47 +1671,55 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration -->
 
-</head>
+</head><h1 class='main-title'>Ryan Joseph Harman Brunt</h1>
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="$('.input').slideToggle();">Toggle Code</a></li>
+            <li><a href="https://github.com/rjhbrunt/rjhbrunt.github.io" target="_blank">See Source</a></li>
+            <li><a href="#">Site Map</a>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Ryan-Joseph-Harman-Brunt">Ryan Joseph Harman Brunt<a class="anchor-link" href="#Ryan-Joseph-Harman-Brunt">&#182;</a></h1>
-</div>
-</div>
-</div>
-
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[92]:
+In&nbsp;[11]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
-
+<span class="c"># This is included in .main.tpl used with nbconvert so that all pages share the same header</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&lt;h1 class=&#39;main-title&#39;&gt;Ryan Joseph Harman Brunt&lt;/h1&gt;</span>
+<span class="sd">&lt;nav&gt;</span>
+<span class="sd">    &lt;div class=&quot;container&quot;&gt;</span>
+<span class="sd">        &lt;ul&gt;</span>
+<span class="sd">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span>
+<span class="sd">            &lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;$(&#39;.input&#39;).slideToggle();&quot;&gt;Toggle Code&lt;/a&gt;&lt;/li&gt;</span>
+<span class="sd">            &lt;li&gt;&lt;a href=&quot;https://github.com/rjhbrunt/rjhbrunt.github.io&quot; target=&quot;_blank&quot;&gt;See Source&lt;/a&gt;&lt;/li&gt;</span>
+<span class="sd">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Site Map&lt;/a&gt;</span>
+<span class="sd">                &lt;ul&gt;</span>
+<span class="sd">                    &lt;li&gt;&lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</span>
+<span class="sd">                    &lt;li&gt;&lt;a href=&quot;/projects&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;</span>
+<span class="sd">                &lt;/ul&gt;</span>
+<span class="sd">            &lt;/li&gt;</span>
+<span class="sd">        &lt;/ul&gt;</span>
+<span class="sd">    &lt;/div&gt;</span>
+<span class="sd">&lt;/nav&gt;</span>
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
-<span class="s">&lt;nav&gt;</span>
-<span class="s">    &lt;div class=&quot;container&quot;&gt;</span>
-<span class="s">        &lt;ul&gt;</span>
-<span class="s">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span>
-<span class="s">            &lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;$(&#39;.input&#39;).slideToggle();&quot;&gt;Toggle Code&lt;/a&gt;&lt;/li&gt;</span>
-<span class="s">            &lt;li&gt;&lt;a href=&quot;https://github.com/rjhbrunt/rjhbrunt.github.io&quot; target=&quot;_blank&quot;&gt;See Source&lt;/a&gt;&lt;/li&gt;</span>
-<span class="s">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Site Map&lt;/a&gt;</span>
-<span class="s">                &lt;ul&gt;</span>
-<span class="s">                    &lt;li&gt;&lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</span>
-<span class="s">                    &lt;li&gt;&lt;a href=&quot;/projects&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;</span>
-<span class="s">                &lt;/ul&gt;</span>
-<span class="s">            &lt;/li&gt;</span>
-<span class="s">        &lt;/ul&gt;</span>
-<span class="s">    &lt;/div&gt;</span>
-<span class="s">&lt;/nav&gt;</span>
-
 <span class="s">&lt;div&gt;</span>
 <span class="s">&lt;img src=&quot;familypic.jpg&quot; height=454 width=333 style=&quot;float:left;margin-right:1.2em&quot;/&gt;</span>
 <span class="s">&lt;div&gt;</span>
@@ -1738,22 +1746,6 @@ In&nbsp;[92]:
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" onclick="$('.input').slideToggle();">Toggle Code</a></li>
-            <li><a href="https://github.com/rjhbrunt/rjhbrunt.github.io" target="_blank">See Source</a></li>
-            <li><a href="#">Site Map</a>
-                <ul>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 <div>
 <img src="familypic.jpg" height=454 width=333 style="float:left;margin-right:1.2em"/>
