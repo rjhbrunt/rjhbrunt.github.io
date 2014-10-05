@@ -14,7 +14,7 @@ h1 {
     border-bottom: 2px solid black;
 }
 
-.main-title {
+#main-title{
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -184,12 +184,14 @@ nav > div > ul > li > ul {
     font-size: 16px;
     border-top: solid 5px #08c;
     list-style: none;
+    z-index: 999;
 }
 
 nav > div > ul > li > ul > li {
     position: relative;
     list-style: none;
     border-right: solid 5px white;
+    z-index: 999;
 }
 
 nav > div > ul > li > ul > li:hover {
@@ -203,6 +205,7 @@ nav > div > ul > li > ul > li > a {
     background-color: white;
     width: 125px;
     text-decoration: none;
+    z-index: 999;
 }
 
 a:visited, a:active, a:link, a:hover {
