@@ -194,6 +194,7 @@ nav > div > ul > li > ul > li {
 
 nav > div > ul > li > ul > li:hover {
     border-right: solid 5px #08c;
+    z-index: 999;
 }
 
 nav > div > ul > li > ul > li > a {

@@ -10,7 +10,7 @@
 
 
 {%- block body -%}
-<h1 class='.main-title'>Ryan Joseph Harman Brunt</h1>
+<h1 class=".main-title">Ryan Joseph Harman Brunt</h1>
 <nav>
     <div class="container">
         <ul>
