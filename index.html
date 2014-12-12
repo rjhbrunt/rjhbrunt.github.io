@@ -1676,13 +1676,13 @@ div#notebook {
 <nav>
     <div class="container">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#" onclick="$('.input').slideToggle();">Toggle Code</a></li>
             <li><a href="https://github.com/rjhbrunt/rjhbrunt.github.io" target="_blank">See Source</a></li>
             <li><a href="#">Site Map</a>
                 <ul>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/research">Research</a></li>
                 </ul>
             </li>
         </ul>
@@ -1700,40 +1700,19 @@ In&nbsp;[1]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
-<span class="c"># This is included in .main.tpl used with nbconvert so that all pages share the same header</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">&lt;h1 class=&#39;main-title&#39;&gt;Ryan Joseph Harman Brunt&lt;/h1&gt;</span>
-<span class="sd">&lt;nav&gt;</span>
-<span class="sd">    &lt;div class=&quot;container&quot;&gt;</span>
-<span class="sd">        &lt;ul&gt;</span>
-<span class="sd">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;</span>
-<span class="sd">            &lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;$(&#39;.input&#39;).slideToggle();&quot;&gt;Toggle Code&lt;/a&gt;&lt;/li&gt;</span>
-<span class="sd">            &lt;li&gt;&lt;a href=&quot;https://github.com/rjhbrunt/rjhbrunt.github.io&quot; target=&quot;_blank&quot;&gt;See Source&lt;/a&gt;&lt;/li&gt;</span>
-<span class="sd">            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Site Map&lt;/a&gt;</span>
-<span class="sd">                &lt;ul&gt;</span>
-<span class="sd">                    &lt;li&gt;&lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;</span>
-<span class="sd">                    &lt;li&gt;&lt;a href=&quot;/projects&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;</span>
-<span class="sd">                &lt;/ul&gt;</span>
-<span class="sd">            &lt;/li&gt;</span>
-<span class="sd">        &lt;/ul&gt;</span>
-<span class="sd">    &lt;/div&gt;</span>
-<span class="sd">&lt;/nav&gt;</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
-<span class="s">&lt;div&gt;</span>
-<span class="s">&lt;img class=&quot;content-photo&quot; src=&quot;familypic.jpg&quot; height=454 width=333 style=&quot;float:left;margin-right:1.2em&quot;/&gt;</span>
-<span class="s">&lt;div&gt;</span>
-<span class="s">&lt;h2&gt;WELCOME&lt;/h2&gt;</span>
-<span class="s">&lt;p&gt;This site is under construction but feel free to hang around and see what I am up to. </span>
-<span class="s">I am experimenting with building a website entirely with &lt;a href=&quot;http://ipython.org/&quot;&gt;IPython&lt;/a&gt; notebooks. It is hosted via </span>
-<span class="s">&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. If you are curious how I made the site</span>
-<span class="s">press the &quot;Toggle Code&quot; button on the menu bar</span>
-<span class="s">and you can see the input I wrote to generate the site. Or you can see the full repository by clicking the &quot;See Source&quot; button above.</span>
-<span class="s">&lt;/p&gt;</span>
-<span class="s">&lt;/div&gt;</span>
-<span class="s">&lt;/div&gt;</span>
-<span class="s">&quot;&quot;&quot;</span><span class="p">))</span>
+<div class="highlight"><pre><span class="o">%%</span><span class="k">html</span>
+<span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">img</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;content-photo&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;familypic.jpg&quot;</span> <span class="n">height</span><span class="o">=</span><span class="mi">454</span> <span class="n">width</span><span class="o">=</span><span class="mi">333</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;float:left;margin-right:1.2em&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">WELCOME</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">This</span> <span class="n">site</span> <span class="ow">is</span> <span class="n">under</span> <span class="n">construction</span> <span class="n">but</span> <span class="n">feel</span> <span class="n">free</span> <span class="n">to</span> <span class="n">hang</span> <span class="n">around</span> <span class="ow">and</span> <span class="n">see</span> <span class="n">what</span> <span class="n">I</span> <span class="n">am</span> <span class="n">up</span> <span class="n">to</span><span class="o">.</span> 
+<span class="n">I</span> <span class="n">am</span> <span class="n">experimenting</span> <span class="k">with</span> <span class="n">building</span> <span class="n">a</span> <span class="n">website</span> <span class="n">entirely</span> <span class="k">with</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;http://ipython.org/&quot;</span><span class="o">&gt;</span><span class="n">IPython</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="n">notebooks</span><span class="o">.</span> <span class="n">It</span> <span class="ow">is</span> <span class="n">hosted</span> <span class="n">via</span> 
+<span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;https://pages.github.com/&quot;</span><span class="o">&gt;</span><span class="n">GitHub</span> <span class="n">Pages</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;.</span> <span class="n">If</span> <span class="n">you</span> <span class="n">are</span> <span class="n">curious</span> <span class="n">how</span> <span class="n">I</span> <span class="n">made</span> <span class="n">the</span> <span class="n">site</span>
+<span class="n">press</span> <span class="n">the</span> <span class="s">&quot;Toggle Code&quot;</span> <span class="n">button</span> <span class="n">on</span> <span class="n">the</span> <span class="n">menu</span> <span class="n">bar</span>
+<span class="ow">and</span> <span class="n">you</span> <span class="n">can</span> <span class="n">see</span> <span class="n">the</span> <span class="nb">input</span> <span class="n">I</span> <span class="n">wrote</span> <span class="n">to</span> <span class="n">generate</span> <span class="n">the</span> <span class="n">site</span><span class="o">.</span> <span class="n">Or</span> <span class="n">you</span> <span class="n">can</span> <span class="n">see</span> <span class="n">the</span> <span class="n">full</span> <span class="n">repository</span> <span class="n">by</span> <span class="n">clicking</span> <span class="n">the</span> <span class="s">&quot;See Source&quot;</span> <span class="n">button</span> <span class="n">above</span><span class="o">.</span>
+<span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
 </pre></div>
 
 </div>
@@ -1747,7 +1726,6 @@ In&nbsp;[1]:
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-
 <div>
 <img class="content-photo" src="familypic.jpg" height=454 width=333 style="float:left;margin-right:1.2em"/>
 <div>
@@ -1760,26 +1738,10 @@ and you can see the input I wrote to generate the site. Or you can see the full 
 </p>
 </div>
 </div>
-
 </div>
 
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
-</div>
 </div>
 </div>
 
