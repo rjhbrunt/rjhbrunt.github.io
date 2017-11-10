@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="text-center">
+    <h1>Posts</h1>
+</div>
+<div class="container text-left">
+    {% for post in posts %}
+    {% if "np" in post.meta['tags'] %}
+    {% else %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-4">
+                {{ post.path }}
+                <a href={{ url_for("page", path=post.path)}}>{{post.title}}</a>
+            </div>
+            <div class="col-sm-2">
+                {{post.date}}
+            
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
