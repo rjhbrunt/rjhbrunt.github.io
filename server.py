@@ -32,10 +32,10 @@ freezer = Freezer(app)
 def pygments_css():
     return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
 
-#@freezer.register_generator
-#def paper():
-#    for i in iglob("papers/*"):
-#        yield '/'+i+'/'
+@freezer.register_generator
+def paper():
+    for i in iglob("static/papers/*"):
+        yield '/'+i+'/'
     
 
 @app.route("/<path:path>/")
@@ -53,7 +53,7 @@ def blog():
 
 @app.route("/papers/<path:path>/")
 def paper(path):
-    return send_from_directory("static/papers",path)
+    return send_from_directory("papers",path)
 
 @app.route("/")
 def index():
