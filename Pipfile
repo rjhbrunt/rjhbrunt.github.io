@@ -11,6 +11,7 @@ flask = "*"
 flask-flatpages = "*"
 frozen-flask = "*"
 flask-bootstrap = "*"
+pygments = "*"
 
 
 [dev-packages]
