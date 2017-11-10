@@ -1,3 +1,5 @@
 #ipython checkpoints
 .ipynb-checkpoints/*
 
+.venv/
+

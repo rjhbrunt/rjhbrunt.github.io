@@ -1,6 +1,6 @@
 title: Hello World
 date: 2017-11-08
-tags: blog, writing
+tags: blog, writing, np
 
 This is my first post on this site. I have two objectives with this blog. First,
 I suck at writing, and I want to suck less. Second, I want to improve my ability
