@@ -57,7 +57,9 @@ def paper(path):
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    posts = [p for p in pages if p.path.startswith("blog")]
+    sorted_posts = sorted(posts, reverse=True, key=lambda post: post.meta['date'])[:3]
+    return render_template("index.html", posts=sorted_posts)
 
 
 if __name__ == "__main__":
